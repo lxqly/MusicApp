@@ -1,0 +1,65 @@
+{
+  "id": "3423302",
+  "name": "lxq",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "993781",
+      "name": "清空",
+      "font_class": "qingkong",
+      "unicode": "e64c",
+      "unicode_decimal": 58956
+    },
+    {
+      "icon_id": "1488893",
+      "name": "单曲循环",
+      "font_class": "danquxunhuan",
+      "unicode": "e607",
+      "unicode_decimal": 58887
+    },
+    {
+      "icon_id": "2674474",
+      "name": "播放",
+      "font_class": "bofang",
+      "unicode": "e624",
+      "unicode_decimal": 58916
+    },
+    {
+      "icon_id": "2674483",
+      "name": "暂停",
+      "font_class": "zanting",
+      "unicode": "e629",
+      "unicode_decimal": 58921
+    },
+    {
+      "icon_id": "7461119",
+      "name": "播放列表",
+      "font_class": "bofangliebiao",
+      "unicode": "e634",
+      "unicode_decimal": 58932
+    },
+    {
+      "icon_id": "7594081",
+      "name": "24gl-shuffle",
+      "font_class": "gl-shuffle",
+      "unicode": "ea75",
+      "unicode_decimal": 60021
+    },
+    {
+      "icon_id": "18965481",
+      "name": "列表循环",
+      "font_class": "liebiaoxunhuan",
+      "unicode": "e6a2",
+      "unicode_decimal": 59042
+    },
+    {
+      "icon_id": "19108544",
+      "name": "清空",
+      "font_class": "qingkong1",
+      "unicode": "e781",
+      "unicode_decimal": 59265
+    }
+  ]
+}

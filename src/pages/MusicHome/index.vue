@@ -28,7 +28,6 @@ export default {
   methods: {
     getBannerData() {
       getBanner().then((res) => {
-        console.log(res);
         this.bannerJson = res.data.data;
       });
     },

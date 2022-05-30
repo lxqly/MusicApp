@@ -1,12 +1,15 @@
 <template>
   <div>
     <router-view></router-view>
+    <MusicPlayer></MusicPlayer>
   </div>
 </template>
 
 <script>
+import MusicPlayer from './components/MusicPlayer/index.vue';
 export default {
-  name: "App",
+    name: "App",
+    components: { MusicPlayer }
 };
 </script>
 
