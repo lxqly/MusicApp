@@ -1,18 +1,13 @@
 <template>
   <div>
-    <MusicHome></MusicHome>
+    <router-view></router-view>
   </div>
 </template>
 
 <script>
-import MusicHome from './pages/home'
-
 export default {
-  name: 'App',
-  components: {
-    MusicHome
-  }
-}
+  name: "App",
+};
 </script>
 
 <style>

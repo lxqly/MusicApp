@@ -5,3 +5,5 @@ const  mockAjax = axios.create({
   });
 
 export const getBanner = ()=>mockAjax.get('/banner','GET')
+
+export const getList = ()=>mockAjax.get('/list','GET')

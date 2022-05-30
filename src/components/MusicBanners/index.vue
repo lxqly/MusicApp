@@ -1,9 +1,11 @@
 <template>
-  <div class="banner">
-    <div class="swipe">
+  <div id="banner">
+    <div id="swipe">
       <mt-swipe :auto="3000">
         <mt-swipe-item v-for="(item,index) in bannerJson" :key="index">
-            <img class="img"  :src="item.pic">
+          <router-link :to="{path: 'detail', query:{'id': item.id}}">
+            <img id="img"  :src="item.pic">
+          </router-link>
         </mt-swipe-item>
       </mt-swipe>
     </div>
@@ -20,19 +22,14 @@ export default {
 </script>                                                                                                           
 
 <style>
-.banner {
-   height: 240px;
+#banner {
+   height: 160px;
    background-color:lightblue;
-   max-width: 768px;
 }
-.swipe {
-  height: 220px;
+#swipe {
+  height: 140px;
 }
-.img {
+#img {
     margin-top: 10px;
-    margin-left: 10px;
-    margin-right: 10px;
-    max-width: 748px;
-    overflow: hidden;
 }
 </style>
