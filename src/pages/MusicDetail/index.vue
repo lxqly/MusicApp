@@ -9,6 +9,7 @@
 </template>
 
 <script>
+import { mapGetters,mapMutations,mapState } from 'vuex';
 import { getDetail } from '@/api/request';
 export default {
   name: "MusicDetail",
@@ -20,12 +21,21 @@ export default {
   mounted() {
     this.getDetailData();
   },
+  computed: {
+    ...mapState([
+       'audio'
+    ])
+  },
   methods: {
+    ...mapMutations([
+        'SET_AUDIO_DATA',
+        'SET_AUDIO_STATUS'
+    ]),
     getDetailData() {
       getDetail(this.$route.query.id).then((res)=>{
          this.songInfo = res.data.data
          this.songInfo.lysic = this.songInfo.lysic.split('   ').join('<br>')
-         console.log(this.songInfo)
+         this.SET_AUDIO_DATA(this.songInfo)
        })
     }
   }
